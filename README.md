@@ -1,4 +1,4 @@
-# HueShift
+# Hue shifting 
 Python Parallel Processing (data processing with fast hue shifting example)
 
 This code generates a hue* cyclically rotated over time.
