@@ -5,8 +5,8 @@ This code generates a hue* cyclically rotated over time.
 
 The original image is sliced into equal or near-equal size data chunks and pushed into
 a multiprocessing queue in order to be processed simultaneously by designated number
-of sub-process called <<listener>>. Those process are spawn at start and
-run in the background, waiting for data to be pushed.
+of sub-process called "listener". 
+Those process are spawn at start and run in the background, waiting for data to be pushed.
 When a job is complete, process are becoming idle until another job is pushed into the queue.
 When all image portions have been processed (Queue empty), the image reconstruction is taking place.
 
@@ -26,8 +26,11 @@ It is very effective for processing large images and can be adapted for Gaussian
 
 performance:
 image size  5000x5000x32         24s   (16 process) -> 197s for a single thread.
+
             1280x1024x32         1.2s  (16 process) -> 10.5s single thread
+            
             640x480x32           0.27s (16 process) -> 2.5s single thread
+            
             200x200x32           40ms  (16 process) -> 325ms single thread
 
 --------------------------------------------------------------------------------------------------------------------
