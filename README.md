@@ -3,6 +3,8 @@ Python Parallel Processing (data processing with fast hue shifting example)
 
 This code generates a hue* cyclically rotated over time.
 
+![alt text](https://github.com/yoyoberenguer/HueShift/blob/master/Hue.png)
+
 The original image is sliced into equal or near-equal size data chunks and pushed into
 a multiprocessing queue in order to be processed simultaneously by designated number
 of sub-process called "listener". 
