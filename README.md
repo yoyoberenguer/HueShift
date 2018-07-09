@@ -6,7 +6,7 @@ Hue is one of the main properties (called color appearance parameters) of a colo
 Hue can typically be represented quantitatively by a single number, often corresponding to an angular position around a central or neutral point or axis on a colorspace coordinate diagram (such as a chromaticity diagram) or color wheel, or by its dominant wavelength or that of its complementary color. The other color appearance parameters are colorfulness, saturation (also known as intensity or chroma), lightness, and brightness.
 Usually, colors with the same hue are distinguished with adjectives referring to their lightness or colorfulness, such as with "light blue", "pastel blue", "vivid blue". Exceptions include brown, which is a dark orange
 
-![alt text](https://github.com/yoyoberenguer/HueShift/blob/master/Hue1.png)
+![alt text](https://github.com/yoyoberenguer/HueShift/blob/master/hue1.png)
 
 # Hue shifting 
 Python Parallel Processing (data processing with fast hue shifting example)
