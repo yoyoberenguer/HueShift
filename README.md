@@ -1,14 +1,22 @@
 # Hue
 
-WIKIPEDIA
+### WIKIPEDIA
 
-Hue is one of the main properties (called color appearance parameters) of a color, defined technically (in the CIECAM02 model), as "the degree to which a stimulus can be described as similar to or different from stimuli that are described as red, green, blue, and yellow",(which in certain theories of color vision are called unique hues). 
-Hue can typically be represented quantitatively by a single number, often corresponding to an angular position around a central or neutral point or axis on a colorspace coordinate diagram (such as a chromaticity diagram) or color wheel, or by its dominant wavelength or that of its complementary color. The other color appearance parameters are colorfulness, saturation (also known as intensity or chroma), lightness, and brightness.
-Usually, colors with the same hue are distinguished with adjectives referring to their lightness or colorfulness, such as with "light blue", "pastel blue", "vivid blue". Exceptions include brown, which is a dark orange
+Hue is one of the main properties (called color appearance parameters) of a color, defined technically (in the CIECAM02 model), 
+as "the degree to which a stimulus can be described as similar to or different from stimuli that are described as red, 
+green, blue, and yellow",(which in certain theories of color vision are called unique hues). 
+
+Hue can typically be represented quantitatively by a single number, often corresponding to an angular position around a central or neutral point or axis on a colorspace coordinate diagram (such as a chromaticity diagram) or color wheel, 
+or by its dominant wavelength or that of its complementary color. The other color appearance parameters are colorfulness,
+saturation (also known as intensity or chroma), lightness, and brightness.
+
+Usually, colors with the same hue are distinguished with adjectives referring to their lightness or colorfulness, 
+such as with "light blue", "pastel blue", "vivid blue". Exceptions include brown, which is a dark orange
 
 ![alt text](https://github.com/yoyoberenguer/HueShift/blob/master/hue1.png)
 
-# Hue shifting 
+### Hue shifting 
+
 Python Parallel Processing (data processing with fast hue shifting example)
 
 This code generates a hue* cyclically rotated over time.
@@ -36,16 +44,13 @@ and create real time rendering effects.
 
 It is very effective for processing large images and can be adapted for Gaussian blur algorithm or other kernel calculations.
 
-performance:
-image size  5000x5000x32         24s   (16 process) -> 197s for a single thread.
-
-            1280x1024x32         1.2s  (16 process) -> 10.5s single thread
-            
-            640x480x32           0.27s (16 process) -> 2.5s single thread
-            
-            200x200x32           40ms  (16 process) -> 325ms single thread
-
---------------------------------------------------------------------------------------------------------------------
+### performance
+Size           | timming (secs)| Processes | result for a single thread (secs)
+---------------|---------------|-----------|-----------------------------------------------------
+5000x5000x32   |   24          |     16    | 197
+1280x1024x32   |   1.2         |     16    | 10.5 
+640x480x32     |   0.27        |     16    | 2.5
+200x200x32     |   40ms        |     16    | 325ms 
 
 This code comes with a MIT license.
 
